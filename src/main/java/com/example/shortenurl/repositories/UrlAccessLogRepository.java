@@ -1,4 +1,8 @@
 package com.example.shortenurl.repositories;
 
-public interface UrlAccessLogRepository  {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.shortenurl.models.UrlAccessLog;
+
+public interface UrlAccessLogRepository extends JpaRepository<UrlAccessLog, Integer> {
 }
